@@ -1,0 +1,641 @@
+Command: /home/huang/.espressif/python_env/idf6.2_py3.12_env/bin/python /home/huang/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/huang/esp/lab2_2/build/lab2_2.elf /home/huang/esp/lab2_2/build/bootloader/bootloader.elf -m '/home/huang/.espressif/python_env/idf6.2_py3.12_env/bin/python' '/home/huang/esp/esp-idf/tools/idf.py'
+[0;32mI (113) esp_image: segment 4: paddr=0003aa38 vaddr=403839dc sizeESP-ROM:esp32c3-eco7-20230720[0m
+Build:Jul 20 2023
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403841a8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1460
+load:0x403cbf10,len:0xcb0
+load:0x403ce710,len:0x2fdc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.1-dev-8341-gddb3852ab5c 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Oct 22 2026 22:49:16[0m
+[0;32mI (25) boot: chip revision: v1.1[0m
+[0;32mI (26) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Partition Table:[0m
+[0;32mI (40) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (47) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (53) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (60) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (66) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0aa7ch ( 43644) map[0m
+[0;32mI (81) esp_image: segment 1: paddr=0001aaa4 vaddr=3fc8ac00 size=01b90h (  7056) load[0m
+[0;32mI (82) esp_image: segment 2: paddr=0001c63c vaddr=40380000 size=039dch ( 14812) load[0m
+[0;32mI (91) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1aa10h (109072) map[0m
+[0;32mI (113) esp_image: segment 4: paddr=0003aa38 vaddr=403839dc size=07114h ( 28948) load[0m
+[0;32mI (119) esp_image: segment 5: paddr=00041b54 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (123) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (134) cpu_start: Unicore app[0m
+[0;32mI (142) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (142) cpu_start: Pro cpu start user code[0m
+[0;32mI (143) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (144) app_init: Application information:[0m
+[0;32mI (148) app_init: Project name:     lab2_2[0m
+[0;32mI (152) app_init: App version:      3551851-dirty[0m
+[0;32mI (156) app_init: Compile time:     Oct 22 2026 22:49:16[0m
+[0;32mI (161) app_init: ELF file SHA256:  bcba7a2a2...[0m
+[0;32mI (165) app_init: ESP-IDF:          v6.1-dev-8341-gddb3852ab5c[0m
+[0;32mI (171) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (175) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (179) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (183) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (189) heap_init: At 3FC8D830 len 000327D0 (201 KiB): RAM[0m
+[0;32mI (194) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (200) heap_init: At 3FCDC710 len 0000294C (10 KiB): Retention RAM[0m
+[0;32mI (206) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (212) spi_flash: detected chip: generic[0m
+[0;32mI (215) spi_flash: flash io: dio[0m
+[0;33mW (218) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (231) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (237) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (244) main_task: Started on CPU0[0m
+[0;32mI (244) main_task: Calling app_main()[0m
+[0;32mI (244) example: SHTC3 detected at 0x70[0m
+[0;32mI (244) example: SHTC3 initialized[0m
+[0;32mI (254) example: Wakeup: ESP_OK[0m
+[0;32mI (274) example: Temperature: ESP_OK[0m
+[0;32mI (294) example: Humidity: ESP_OK[0m
+[0;32mI (294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 49% humidity
+[0;32mI (2254) example: Wakeup: ESP_OK[0m
+[0;32mI (2274) example: Temperature: ESP_OK[0m
+[0;32mI (2294) example: Humidity: ESP_OK[0m
+[0;32mI (2294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 49% humidity
+[0;32mI (4254) example: Wakeup: ESP_OK[0m
+[0;32mI (4274) example: Temperature: ESP_OK[0m
+[0;32mI (4294) example: Humidity: ESP_OK[0m
+[0;32mI (4294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 49% humidity
+[0;32mI (6254) example: Wakeup: ESP_OK[0m
+[0;32mI (6274) example: Temperature: ESP_OK[0m
+[0;32mI (6294) example: Humidity: ESP_OK[0m
+[0;32mI (6294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 49% humidity
+[0;32mI (8254) example: Wakeup: ESP_OK[0m
+[0;32mI (8274) example: Temperature: ESP_OK[0m
+[0;32mI (8294) example: Humidity: ESP_OK[0m
+[0;32mI (8294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 49% humidity
+[0;32mI (10254) example: Wakeup: ESP_OK[0m
+[0;32mI (10274) example: Temperature: ESP_OK[0m
+[0;32mI (10294) example: Humidity: ESP_OK[0m
+[0;32mI (10294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 49% humidity
+[0;32mI (12254) example: Wakeup: ESP_OK[0m
+[0;32mI (12274) example: Temperature: ESP_OK[0m
+[0;32mI (12294) example: Humidity: ESP_OK[0m
+[0;32mI (12294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 65% humidity
+[0;32mI (14254) example: Wakeup: ESP_OK[0m
+[0;32mI (14274) example: Temperature: ESP_OK[0m
+[0;32mI (14294) example: Humidity: ESP_OK[0m
+[0;32mI (14294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 82F) with a 77% humidity
+[0;32mI (16254) example: Wakeup: ESP_OK[0m
+[0;32mI (16274) example: Temperature: ESP_OK[0m
+[0;32mI (16294) example: Humidity: ESP_OK[0m
+[0;32mI (16294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 84% humidity
+[0;32mI (18254) example: Wakeup: ESP_OK[0m
+[0;32mI (18274) example: Temperature: ESP_OK[0m
+[0;32mI (18294) example: Humidity: ESP_OK[0m
+[0;32mI (18294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 82F) with a 88% humidity
+[0;32mI (20254) example: Wakeup: ESP_OK[0m
+[0;32mI (20274) example: Temperature: ESP_OK[0m
+[0;32mI (20294) example: Humidity: ESP_OK[0m
+[0;32mI (20294) example: Sleep: ESP_OK[0m
+Temperature is 29C (or 85F) with a 90% humidity
+[0;32mI (22254) example: Wakeup: ESP_OK[0m
+[0;32mI (22274) example: Temperature: ESP_OK[0m
+[0;32mI (22294) example: Humidity: ESP_OK[0m
+[0;32mI (22294) example: Sleep: ESP_OK[0m
+Temperature is 29C (or 85F) with a 91% humidity
+[0;32mI (24254) example: Wakeup: ESP_OK[0m
+[0;32mI (24274) example: Temperature: ESP_OK[0m
+[0;32mI (24294) example: Humidity: ESP_OK[0m
+[0;32mI (24294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 83F) with a 92% humidity
+[0;32mI (26254) example: Wakeup: ESP_OK[0m
+[0;32mI (26274) example: Temperature: ESP_OK[0m
+[0;32mI (26294) example: Humidity: ESP_OK[0m
+[0;32mI (26294) example: Sleep: ESP_OK[0m
+Temperature is 30C (or 86F) with a 93% humidity
+[0;32mI (28254) example: Wakeup: ESP_OK[0m
+[0;32mI (28274) example: Temperature: ESP_OK[0m
+[0;32mI (28294) example: Humidity: ESP_OK[0m
+[0;32mI (28294) example: Sleep: ESP_OK[0m
+Temperature is 29C (or 84F) with a 93% humidity
+[0;32mI (30254) example: Wakeup: ESP_OK[0m
+[0;32mI (30274) example: Temperature: ESP_OK[0m
+[0;32mI (30294) example: Humidity: ESP_OK[0m
+[0;32mI (30294) example: Sleep: ESP_OK[0m
+Temperature is 29C (or 84F) with a 93% humidity
+[0;32mI (32254) example: Wakeup: ESP_OK[0m
+[0;32mI (32274) example: Temperature: ESP_OK[0m
+[0;32mI (32294) example: Humidity: ESP_OK[0m
+[0;32mI (32294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 83F) with a 93% humidity
+[0;32mI (34254) example: Wakeup: ESP_OK[0m
+[0;32mI (34274) example: Temperature: ESP_OK[0m
+[0;32mI (34294) example: Humidity: ESP_OK[0m
+[0;32mI (34294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 83F) with a 94% humidity
+[0;32mI (36254) example: Wakeup: ESP_OK[0m
+[0;32mI (36274) example: Temperature: ESP_OK[0m
+[0;32mI (36294) example: Humidity: ESP_OK[0m
+[0;32mI (36294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 83F) with a 94% humidity
+[0;32mI (38254) example: Wakeup: ESP_OK[0m
+[0;32mI (38274) example: Temperature: ESP_OK[0m
+[0;32mI (38294) example: Humidity: ESP_OK[0m
+[0;32mI (38294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 82F) with a 94% humidity
+[0;32mI (40254) example: Wakeup: ESP_OK[0m
+[0;32mI (40274) example: Temperature: ESP_OK[0m
+[0;32mI (40294) example: Humidity: ESP_OK[0m
+[0;32mI (40294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 82F) with a 94% humidity
+[0;32mI (42254) example: Wakeup: ESP_OK[0m
+[0;32mI (42274) example: Temperature: ESP_OK[0m
+[0;32mI (42294) example: Humidity: ESP_OK[0m
+[0;32mI (42294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 82F) with a 94% humidity
+[0;32mI (44254) example: Wakeup: ESP_OK[0m
+[0;32mI (44274) example: Temperature: ESP_OK[0m
+[0;32mI (44294) example: Humidity: ESP_OK[0m
+[0;32mI (44294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 82F) with a 94% humidity
+[0;32mI (46254) example: Wakeup: ESP_OK[0m
+[0;32mI (46274) example: Temperature: ESP_OK[0m
+[0;32mI (46294) example: Humidity: ESP_OK[0m
+[0;32mI (46294) example: Sleep: ESP_OK[0m
+Temperature is 28C (or 82F) with a 94% humidity
+[0;32mI (48254) example: Wakeup: ESP_OK[0m
+[0;32mI (48274) example: Temperature: ESP_OK[0m
+[0;32mI (48294) example: Humidity: ESP_OK[0m
+[0;32mI (48294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 94% humidity
+[0;32mI (50254) example: Wakeup: ESP_OK[0m
+[0;32mI (50274) example: Temperature: ESP_OK[0m
+[0;32mI (50294) example: Humidity: ESP_OK[0m
+[0;32mI (50294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 94% humidity
+[0;32mI (52254) example: Wakeup: ESP_OK[0m
+[0;32mI (52274) example: Temperature: ESP_OK[0m
+[0;32mI (52294) example: Humidity: ESP_OK[0m
+[0;32mI (52294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 94% humidity
+[0;32mI (54254) example: Wakeup: ESP_OK[0m
+[0;32mI (54274) example: Temperature: ESP_OK[0m
+[0;32mI (54294) example: Humidity: ESP_OK[0m
+[0;32mI (54294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 94% humidity
+[0;32mI (56254) example: Wakeup: ESP_OK[0m
+[0;32mI (56274) example: Temperature: ESP_OK[0m
+[0;32mI (56294) example: Humidity: ESP_OK[0m
+[0;32mI (56294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 94% humidity
+[0;32mI (58254) example: Wakeup: ESP_OK[0m
+[0;32mI (58274) example: Temperature: ESP_OK[0m
+[0;32mI (58294) example: Humidity: ESP_OK[0m
+[0;32mI (58294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 94% humidity
+[0;32mI (60254) example: Wakeup: ESP_OK[0m
+[0;32mI (60274) example: Temperature: ESP_OK[0m
+[0;32mI (60294) example: Humidity: ESP_OK[0m
+[0;32mI (60294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 81F) with a 94% humidity
+[0;32mI (62254) example: Wakeup: ESP_OK[0m
+[0;32mI (62274) example: Temperature: ESP_OK[0m
+[0;32mI (62294) example: Humidity: ESP_OK[0m
+[0;32mI (62294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 95% humidity
+[0;32mI (64254) example: Wakeup: ESP_OK[0m
+[0;32mI (64274) example: Temperature: ESP_OK[0m
+[0;32mI (64294) example: Humidity: ESP_OK[0m
+[0;32mI (64294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 95% humidity
+[0;32mI (66254) example: Wakeup: ESP_OK[0m
+[0;32mI (66274) example: Temperature: ESP_OK[0m
+[0;32mI (66294) example: Humidity: ESP_OK[0m
+[0;32mI (66294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 94% humidity
+[0;32mI (68254) example: Wakeup: ESP_OK[0m
+[0;32mI (68274) example: Temperature: ESP_OK[0m
+[0;32mI (68294) example: Humidity: ESP_OK[0m
+[0;32mI (68294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 94% humidity
+[0;32mI (70254) example: Wakeup: ESP_OK[0m
+[0;32mI (70274) example: Temperature: ESP_OK[0m
+[0;32mI (70294) example: Humidity: ESP_OK[0m
+[0;32mI (70294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 94% humidity
+[0;32mI (72254) example: Wakeup: ESP_OK[0m
+[0;32mI (72274) example: Temperature: ESP_OK[0m
+[0;32mI (72294) example: Humidity: ESP_OK[0m
+[0;32mI (72294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 94% humidity
+[0;32mI (74254) example: Wakeup: ESP_OK[0m
+[0;32mI (74274) example: Temperature: ESP_OK[0m
+[0;32mI (74294) example: Humidity: ESP_OK[0m
+[0;32mI (74294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 94% humidity
+[0;32mI (76254) example: Wakeup: ESP_OK[0m
+[0;32mI (76274) example: Temperature: ESP_OK[0m
+[0;32mI (76294) example: Humidity: ESP_OK[0m
+[0;32mI (76294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 94% humidity
+[0;32mI (78254) example: Wakeup: ESP_OK[0m
+[0;32mI (78274) example: Temperature: ESP_OK[0m
+[0;32mI (78294) example: Humidity: ESP_OK[0m
+[0;32mI (78294) example: Sleep: ESP_OK[0m
+Temperature is 27C (or 80F) with a 94% humidity
+[0;32mI (80254) example: Wakeup: ESP_OK[0m
+[0;32mI (80274) example: Temperature: ESP_OK[0m
+[0;32mI (80294) example: Humidity: ESP_OK[0m
+[0;32mI (80294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 80F) with a 93% humidity
+[0;32mI (82254) example: Wakeup: ESP_OK[0m
+[0;32mI (82274) example: Temperature: ESP_OK[0m
+[0;32mI (82294) example: Humidity: ESP_OK[0m
+[0;32mI (82294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 80F) with a 93% humidity
+[0;32mI (84254) example: Wakeup: ESP_OK[0m
+[0;32mI (84274) example: Temperature: ESP_OK[0m
+[0;32mI (84294) example: Humidity: ESP_OK[0m
+[0;32mI (84294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 80F) with a 92% humidity
+[0;32mI (86254) example: Wakeup: ESP_OK[0m
+[0;32mI (86274) example: Temperature: ESP_OK[0m
+[0;32mI (86294) example: Humidity: ESP_OK[0m
+[0;32mI (86294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 80F) with a 91% humidity
+[0;32mI (88254) example: Wakeup: ESP_OK[0m
+[0;32mI (88274) example: Temperature: ESP_OK[0m
+[0;32mI (88294) example: Humidity: ESP_OK[0m
+[0;32mI (88294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 91% humidity
+[0;32mI (90254) example: Wakeup: ESP_OK[0m
+[0;32mI (90274) example: Temperature: ESP_OK[0m
+[0;32mI (90294) example: Humidity: ESP_OK[0m
+[0;32mI (90294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 90% humidity
+[0;32mI (92254) example: Wakeup: ESP_OK[0m
+[0;32mI (92274) example: Temperature: ESP_OK[0m
+[0;32mI (92294) example: Humidity: ESP_OK[0m
+[0;32mI (92294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 88% humidity
+[0;32mI (94254) example: Wakeup: ESP_OK[0m
+[0;32mI (94274) example: Temperature: ESP_OK[0m
+[0;32mI (94294) example: Humidity: ESP_OK[0m
+[0;32mI (94294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 87% humidity
+[0;32mI (96254) example: Wakeup: ESP_OK[0m
+[0;32mI (96274) example: Temperature: ESP_OK[0m
+[0;32mI (96294) example: Humidity: ESP_OK[0m
+[0;32mI (96294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 86% humidity
+[0;32mI (98254) example: Wakeup: ESP_OK[0m
+[0;32mI (98274) example: Temperature: ESP_OK[0m
+[0;32mI (98294) example: Humidity: ESP_OK[0m
+[0;32mI (98294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 84% humidity
+[0;32mI (100254) example: Wakeup: ESP_OK[0m
+[0;32mI (100274) example: Temperature: ESP_OK[0m
+[0;32mI (100294) example: Humidity: ESP_OK[0m
+[0;32mI (100294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 83% humidity
+[0;32mI (102254) example: Wakeup: ESP_OK[0m
+[0;32mI (102274) example: Temperature: ESP_OK[0m
+[0;32mI (102294) example: Humidity: ESP_OK[0m
+[0;32mI (102294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 81% humidity
+[0;32mI (104254) example: Wakeup: ESP_OK[0m
+[0;32mI (104274) example: Temperature: ESP_OK[0m
+[0;32mI (104294) example: Humidity: ESP_OK[0m
+[0;32mI (104294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 79% humidity
+[0;32mI (106254) example: Wakeup: ESP_OK[0m
+[0;32mI (106274) example: Temperature: ESP_OK[0m
+[0;32mI (106294) example: Humidity: ESP_OK[0m
+[0;32mI (106294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 77% humidity
+[0;32mI (108254) example: Wakeup: ESP_OK[0m
+[0;32mI (108274) example: Temperature: ESP_OK[0m
+[0;32mI (108294) example: Humidity: ESP_OK[0m
+[0;32mI (108294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 76% humidity
+[0;32mI (110254) example: Wakeup: ESP_OK[0m
+[0;32mI (110274) example: Temperature: ESP_OK[0m
+[0;32mI (110294) example: Humidity: ESP_OK[0m
+[0;32mI (110294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 73% humidity
+[0;32mI (112254) example: Wakeup: ESP_OK[0m
+[0;32mI (112274) example: Temperature: ESP_OK[0m
+[0;32mI (112294) example: Humidity: ESP_OK[0m
+[0;32mI (112294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 71% humidity
+[0;32mI (114254) example: Wakeup: ESP_OK[0m
+[0;32mI (114274) example: Temperature: ESP_OK[0m
+[0;32mI (114294) example: Humidity: ESP_OK[0m
+[0;32mI (114294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 69% humidity
+[0;32mI (116254) example: Wakeup: ESP_OK[0m
+[0;32mI (116274) example: Temperature: ESP_OK[0m
+[0;32mI (116294) example: Humidity: ESP_OK[0m
+[0;32mI (116294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 68% humidity
+[0;32mI (118254) example: Wakeup: ESP_OK[0m
+[0;32mI (118274) example: Temperature: ESP_OK[0m
+[0;32mI (118294) example: Humidity: ESP_OK[0m
+[0;32mI (118294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 66% humidity
+[0;32mI (120254) example: Wakeup: ESP_OK[0m
+[0;32mI (120274) example: Temperature: ESP_OK[0m
+[0;32mI (120294) example: Humidity: ESP_OK[0m
+[0;32mI (120294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 64% humidity
+[0;32mI (122254) example: Wakeup: ESP_OK[0m
+[0;32mI (122274) example: Temperature: ESP_OK[0m
+[0;32mI (122294) example: Humidity: ESP_OK[0m
+[0;32mI (122294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 63% humidity
+[0;32mI (124254) example: Wakeup: ESP_OK[0m
+[0;32mI (124274) example: Temperature: ESP_OK[0m
+[0;32mI (124294) example: Humidity: ESP_OK[0m
+[0;32mI (124294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 61% humidity
+[0;32mI (126254) example: Wakeup: ESP_OK[0m
+[0;32mI (126274) example: Temperature: ESP_OK[0m
+[0;32mI (126294) example: Humidity: ESP_OK[0m
+[0;32mI (126294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 60% humidity
+[0;32mI (128254) example: Wakeup: ESP_OK[0m
+[0;32mI (128274) example: Temperature: ESP_OK[0m
+[0;32mI (128294) example: Humidity: ESP_OK[0m
+[0;32mI (128294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 59% humidity
+[0;32mI (130254) example: Wakeup: ESP_OK[0m
+[0;32mI (130274) example: Temperature: ESP_OK[0m
+[0;32mI (130294) example: Humidity: ESP_OK[0m
+[0;32mI (130294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 59% humidity
+[0;32mI (132254) example: Wakeup: ESP_OK[0m
+[0;32mI (132274) example: Temperature: ESP_OK[0m
+[0;32mI (132294) example: Humidity: ESP_OK[0m
+[0;32mI (132294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 58% humidity
+[0;32mI (134254) example: Wakeup: ESP_OK[0m
+[0;32mI (134274) example: Temperature: ESP_OK[0m
+[0;32mI (134294) example: Humidity: ESP_OK[0m
+[0;32mI (134294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 57% humidity
+[0;32mI (136254) example: Wakeup: ESP_OK[0m
+[0;32mI (136274) example: Temperature: ESP_OK[0m
+[0;32mI (136294) example: Humidity: ESP_OK[0m
+[0;32mI (136294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 57% humidity
+[0;32mI (138254) example: Wakeup: ESP_OK[0m
+[0;32mI (138274) example: Temperature: ESP_OK[0m
+[0;32mI (138294) example: Humidity: ESP_OK[0m
+[0;32mI (138294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 56% humidity
+[0;32mI (140254) example: Wakeup: ESP_OK[0m
+[0;32mI (140274) example: Temperature: ESP_OK[0m
+[0;32mI (140294) example: Humidity: ESP_OK[0m
+[0;32mI (140294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 56% humidity
+[0;32mI (142254) example: Wakeup: ESP_OK[0m
+[0;32mI (142274) example: Temperature: ESP_OK[0m
+[0;32mI (142294) example: Humidity: ESP_OK[0m
+[0;32mI (142294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 55% humidity
+[0;32mI (144254) example: Wakeup: ESP_OK[0m
+[0;32mI (144274) example: Temperature: ESP_OK[0m
+[0;32mI (144294) example: Humidity: ESP_OK[0m
+[0;32mI (144294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (146254) example: Wakeup: ESP_OK[0m
+[0;32mI (146274) example: Temperature: ESP_OK[0m
+[0;32mI (146294) example: Humidity: ESP_OK[0m
+[0;32mI (146294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (148254) example: Wakeup: ESP_OK[0m
+[0;32mI (148274) example: Temperature: ESP_OK[0m
+[0;32mI (148294) example: Humidity: ESP_OK[0m
+[0;32mI (148294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (150254) example: Wakeup: ESP_OK[0m
+[0;32mI (150274) example: Temperature: ESP_OK[0m
+[0;32mI (150294) example: Humidity: ESP_OK[0m
+[0;32mI (150294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (152254) example: Wakeup: ESP_OK[0m
+[0;32mI (152274) example: Temperature: ESP_OK[0m
+[0;32mI (152294) example: Humidity: ESP_OK[0m
+[0;32mI (152294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (154254) example: Wakeup: ESP_OK[0m
+[0;32mI (154274) example: Temperature: ESP_OK[0m
+[0;32mI (154294) example: Humidity: ESP_OK[0m
+[0;32mI (154294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (156254) example: Wakeup: ESP_OK[0m
+[0;32mI (156274) example: Temperature: ESP_OK[0m
+[0;32mI (156294) example: Humidity: ESP_OK[0m
+[0;32mI (156294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (158254) example: Wakeup: ESP_OK[0m
+[0;32mI (158274) example: Temperature: ESP_OK[0m
+[0;32mI (158294) example: Humidity: ESP_OK[0m
+[0;32mI (158294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (160254) example: Wakeup: ESP_OK[0m
+[0;32mI (160274) example: Temperature: ESP_OK[0m
+[0;32mI (160294) example: Humidity: ESP_OK[0m
+[0;32mI (160294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (162254) example: Wakeup: ESP_OK[0m
+[0;32mI (162274) example: Temperature: ESP_OK[0m
+[0;32mI (162294) example: Humidity: ESP_OK[0m
+[0;32mI (162294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 54% humidity
+[0;32mI (164254) example: Wakeup: ESP_OK[0m
+[0;32mI (164274) example: Temperature: ESP_OK[0m
+[0;32mI (164294) example: Humidity: ESP_OK[0m
+[0;32mI (164294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 53% humidity
+[0;32mI (166254) example: Wakeup: ESP_OK[0m
+[0;32mI (166274) example: Temperature: ESP_OK[0m
+[0;32mI (166294) example: Humidity: ESP_OK[0m
+[0;32mI (166294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 53% humidity
+[0;32mI (168254) example: Wakeup: ESP_OK[0m
+[0;32mI (168274) example: Temperature: ESP_OK[0m
+[0;32mI (168294) example: Humidity: ESP_OK[0m
+[0;32mI (168294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 52% humidity
+[0;32mI (170254) example: Wakeup: ESP_OK[0m
+[0;32mI (170274) example: Temperature: ESP_OK[0m
+[0;32mI (170294) example: Humidity: ESP_OK[0m
+[0;32mI (170294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 52% humidity
+[0;32mI (172254) example: Wakeup: ESP_OK[0m
+[0;32mI (172274) example: Temperature: ESP_OK[0m
+[0;32mI (172294) example: Humidity: ESP_OK[0m
+[0;32mI (172294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 52% humidity
+[0;32mI (174254) example: Wakeup: ESP_OK[0m
+[0;32mI (174274) example: Temperature: ESP_OK[0m
+[0;32mI (174294) example: Humidity: ESP_OK[0m
+[0;32mI (174294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (176254) example: Wakeup: ESP_OK[0m
+[0;32mI (176274) example: Temperature: ESP_OK[0m
+[0;32mI (176294) example: Humidity: ESP_OK[0m
+[0;32mI (176294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (178254) example: Wakeup: ESP_OK[0m
+[0;32mI (178274) example: Temperature: ESP_OK[0m
+[0;32mI (178294) example: Humidity: ESP_OK[0m
+[0;32mI (178294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (180254) example: Wakeup: ESP_OK[0m
+[0;32mI (180274) example: Temperature: ESP_OK[0m
+[0;32mI (180294) example: Humidity: ESP_OK[0m
+[0;32mI (180294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (182254) example: Wakeup: ESP_OK[0m
+[0;32mI (182274) example: Temperature: ESP_OK[0m
+[0;32mI (182294) example: Humidity: ESP_OK[0m
+[0;32mI (182294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (184254) example: Wakeup: ESP_OK[0m
+[0;32mI (184274) example: Temperature: ESP_OK[0m
+[0;32mI (184294) example: Humidity: ESP_OK[0m
+[0;32mI (184294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (186254) example: Wakeup: ESP_OK[0m
+[0;32mI (186274) example: Temperature: ESP_OK[0m
+[0;32mI (186294) example: Humidity: ESP_OK[0m
+[0;32mI (186294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (188254) example: Wakeup: ESP_OK[0m
+[0;32mI (188274) example: Temperature: ESP_OK[0m
+[0;32mI (188294) example: Humidity: ESP_OK[0m
+[0;32mI (188294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (190254) example: Wakeup: ESP_OK[0m
+[0;32mI (190274) example: Temperature: ESP_OK[0m
+[0;32mI (190294) example: Humidity: ESP_OK[0m
+[0;32mI (190294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 51% humidity
+[0;32mI (192254) example: Wakeup: ESP_OK[0m
+[0;32mI (192274) example: Temperature: ESP_OK[0m
+[0;32mI (192294) example: Humidity: ESP_OK[0m
+[0;32mI (192294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (194254) example: Wakeup: ESP_OK[0m
+[0;32mI (194274) example: Temperature: ESP_OK[0m
+[0;32mI (194294) example: Humidity: ESP_OK[0m
+[0;32mI (194294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (196254) example: Wakeup: ESP_OK[0m
+[0;32mI (196274) example: Temperature: ESP_OK[0m
+[0;32mI (196294) example: Humidity: ESP_OK[0m
+[0;32mI (196294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (198254) example: Wakeup: ESP_OK[0m
+[0;32mI (198274) example: Temperature: ESP_OK[0m
+[0;32mI (198294) example: Humidity: ESP_OK[0m
+[0;32mI (198294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (200254) example: Wakeup: ESP_OK[0m
+[0;32mI (200274) example: Temperature: ESP_OK[0m
+[0;32mI (200294) example: Humidity: ESP_OK[0m
+[0;32mI (200294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (202254) example: Wakeup: ESP_OK[0m
+[0;32mI (202274) example: Temperature: ESP_OK[0m
+[0;32mI (202294) example: Humidity: ESP_OK[0m
+[0;32mI (202294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (204254) example: Wakeup: ESP_OK[0m
+[0;32mI (204274) example: Temperature: ESP_OK[0m
+[0;32mI (204294) example: Humidity: ESP_OK[0m
+[0;32mI (204294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (206254) example: Wakeup: ESP_OK[0m
+[0;32mI (206274) example: Temperature: ESP_OK[0m
+[0;32mI (206294) example: Humidity: ESP_OK[0m
+[0;32mI (206294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (208254) example: Wakeup: ESP_OK[0m
+[0;32mI (208274) example: Temperature: ESP_OK[0m
+[0;32mI (208294) example: Humidity: ESP_OK[0m
+[0;32mI (208294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (210254) example: Wakeup: ESP_OK[0m
+[0;32mI (210274) example: Temperature: ESP_OK[0m
+[0;32mI (210294) example: Humidity: ESP_OK[0m
+[0;32mI (210294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (212254) example: Wakeup: ESP_OK[0m
+[0;32mI (212274) example: Temperature: ESP_OK[0m
+[0;32mI (212294) example: Humidity: ESP_OK[0m
+[0;32mI (212294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (214254) example: Wakeup: ESP_OK[0m
+[0;32mI (214274) example: Temperature: ESP_OK[0m
+[0;32mI (214294) example: Humidity: ESP_OK[0m
+[0;32mI (214294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (216254) example: Wakeup: ESP_OK[0m
+[0;32mI (216274) example: Temperature: ESP_OK[0m
+[0;32mI (216294) example: Humidity: ESP_OK[0m
+[0;32mI (216294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (218254) example: Wakeup: ESP_OK[0m
+[0;32mI (218274) example: Temperature: ESP_OK[0m
+[0;32mI (218294) example: Humidity: ESP_OK[0m
+[0;32mI (218294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (220254) example: Wakeup: ESP_OK[0m
+[0;32mI (220274) example: Temperature: ESP_OK[0m
+[0;32mI (220294) example: Humidity: ESP_OK[0m
+[0;32mI (220294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (222254) example: Wakeup: ESP_OK[0m
+[0;32mI (222274) example: Temperature: ESP_OK[0m
+[0;32mI (222294) example: Humidity: ESP_OK[0m
+[0;32mI (222294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (224254) example: Wakeup: ESP_OK[0m
+[0;32mI (224274) example: Temperature: ESP_OK[0m
+[0;32mI (224294) example: Humidity: ESP_OK[0m
+[0;32mI (224294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (226254) example: Wakeup: ESP_OK[0m
+[0;32mI (226274) example: Temperature: ESP_OK[0m
+[0;32mI (226294) example: Humidity: ESP_OK[0m
+[0;32mI (226294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (228254) example: Wakeup: ESP_OK[0m
+[0;32mI (228274) example: Temperature: ESP_OK[0m
+[0;32mI (228294) example: Humidity: ESP_OK[0m
+[0;32mI (228294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (230254) example: Wakeup: ESP_OK[0m
+[0;32mI (230274) example: Temperature: ESP_OK[0m
+[0;32mI (230294) example: Humidity: ESP_OK[0m
+[0;32mI (230294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
+[0;32mI (232254) example: Wakeup: ESP_OK[0m
+[0;32mI (232274) example: Temperature: ESP_OK[0m
+[0;32mI (232294) example: Humidity: ESP_OK[0m
+[0;32mI (232294) example: Sleep: ESP_OK[0m
+Temperature is 26C (or 79F) with a 50% humidity
